@@ -24,12 +24,12 @@
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <activity
-            android:name=".ZonaRoja"
-            android:label="@string/title_activity_zona_roja"></activity>
+            android:name=".nuevoMapa"
+            android:label="@string/title_activity_nuevo_mapa"></activity>
 
         <activity
-            android:name=".CentroSalud"
-            android:label="@string/title_activity_centro_salud" />
+            android:name=".ZonaRoja"
+            android:label="@string/title_activity_zona_roja" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -38,6 +38,9 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
+        <activity
+            android:name=".CentroSalud"
+            android:label="@string/title_activity_centro_salud" />
         <activity
             android:name=".Comisaria"
             android:label="@string/title_activity_comisaria" />
@@ -72,8 +75,6 @@
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <activity android:name=".FormularioDescarte" />
-        <activity android:name=".SplashDos" />
-        <activity android:name=".MainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -82,6 +83,8 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
+        <activity android:name=".SplashDos" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashUno">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -89,6 +92,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />

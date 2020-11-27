@@ -7,4 +7,5 @@
     <string name="title_activity_mercado">Map</string>
     <string name="title_activity_centro_salud">Map</string>
     <string name="title_activity_zona_roja">Map</string>
+    <string name="title_activity_nuevo_mapa">Map</string>
 </resources>
