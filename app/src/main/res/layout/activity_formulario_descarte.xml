@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoprincipal"
+    tools:context=".FormularioDescarte">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#83E7E8ED"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edad: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/txtEdad"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperatura: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <EditText
+                    android:id="@+id/txtTemperatura"
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dificultad para respirar: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+               <RadioGroup
+                   android:id="@+id/rbgDificultad"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <RadioButton
+                       android:id="@+id/rbDiSi"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="SI"
+                       android:textStyle="bold"></RadioButton>
+                   <RadioButton
+                       android:id="@+id/rbDiNo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="NO"
+                       android:textStyle="bold"></RadioButton>
+               </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuvo Contacto con alguna personas contagiada: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rbgContacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rbConSi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SI"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbConNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dolor de cabeza: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rbgDolorCabeza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbCaSi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SI"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbCaNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dolor de Garganta: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rbgDolorGarganta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbGarSi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SI"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbGarNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dolor de Pecho: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rbgDolorPecho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rbPecSi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SI"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbPecNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nivel de Saturacion de Oxigeno: "
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rbgNivelSaturacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rbMe90"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menor a 90"
+                        android:textStyle="bold"/>
+
+                    <RadioButton
+                        android:id="@+id/rbMa90"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mayor a 90"
+                        android:textStyle="bold"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnEvaluar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="EVALUAR"
+                    android:textSize="18dp"
+                    android:textStyle="bold"></Button>
+
+                <TextView
+                    android:id="@+id/txtResultado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

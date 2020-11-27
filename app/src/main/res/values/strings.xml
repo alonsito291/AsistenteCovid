@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Asistente Covid</string>
+    <string name="title_activity_hospital">Map</string>
+    <string name="title_activity_clinica">Map</string>
+    <string name="title_activity_comisaria">Map</string>
+    <string name="title_activity_cuartel">Map</string>
+    <string name="title_activity_mercado">Map</string>
+    <string name="title_activity_centro_salud">Map</string>
+    <string name="title_activity_zona_roja">Map</string>
+</resources>
